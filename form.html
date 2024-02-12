@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Betty Web</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">&#128062;Betty'nin Web Sitesi&#128062;</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="form.html">Kayıp İhbar</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="photo.html">Fotoğraf</a></li>
+                    <li><a href="image-map.html">Süpriz</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Kayıp Evcil Hayvan İhbar Formu</h1>
+        <hr>
+        <form autocomplete="on">
+            <label for="EvcilHayvanAdi">Evcil Hayvanınızın Adı: </label><br>
+            <input type="text" id="EvcilHayvanAdi" name="EvcilHayvanAdi" required><br> <br>
+
+            <label for="datemin">Evcil Hayvanınızın Doğum Tarihi: </label><br>
+            <input type="date" id="datemin" name="datemin" min="1990-01-02" max="2023-11-23" required><br><br>
+
+            <label for="pwd">Evcil Hayvanınızın Çip Numarası: </label> <br>
+            <input type="password" id="pwd" name="pwd" size="16"> <br><br>
+
+            <label for="HayvanTuru">Evcil Hayvanınızın Türü: </label><br>
+            <select id="HayvanTuru" name="HayvanTuru" size="1">
+                <optgroup label="Tür">
+                    <option value="Kedi">Kedi</option>
+                    <option value="Köpek">Köpek</option>
+                    <option value="Kuş">Kuş</option>
+                    <option value="Fare">Fare</option>
+                    <option value="Tavşan">Tavşan</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="HayvanResim">Evcil Hayvanınızın Resmi: </label> <br>
+            <input type="file" id="HayvanResim" name="HayvanResim"><br><br>
+
+            <label for="phone">Telefon Numaranız: </label> <br>
+            <label for="phone">5XX-XXX-XX-XX </label> <br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"> <br><br>
+
+            <label for="email">Email adresiniz: </label> <br>
+            <input type="email" id="email" name="email"> <br><br>
+
+            <label for="EvcilHayvanSehir">En Son Görüldüğü Şehir: </label><br>
+            <input type="text" id="EvcilHayvanSehir" name="EvcilHayvanSehir" required><br> <br><br>
+
+            <!-- radio section-->
+            <label>Evcil Hayvanınızın Kürk Rengi</label><br>
+
+            <input type="radio" id="gri" name="renk" value="gri">
+            <label for="gri">Gri</label><br>
+
+            <input type="radio" id="siyah" name="renk" value="siyah">
+            <label for="siyah">Siyah</label><br>
+
+            <input type="radio" id="beyaz" name="renk" value="beyaz">
+            <label for="beyaz">Beyaz</label><br>
+
+            <input type="radio" id="sari" name="renk" value="sari">
+            <label for="sari">Sarı</label><br> <br><br>
+            <!-- radio section-->
+
+            <!--Detaylı renk seçimi rgb-->
+            <!--hangi input type bu işi yapar ?-->
+
+            <!-- checkbox section -->
+            <label>Evcil Hayvanınızın Sağlık Sorunu: </label> <br>
+            <label>(Sağlık sorunu yok ise boş bırakınız)</label> <br>
+
+            <input type="checkbox" id="sasilik" name="hastaliklar" value="Şaşılık">
+            <label for="sasilik">Şaşılık</label><br>
+
+            <input type="checkbox" id="sagirlik" name="hastaliklar" value="Sağırlık">
+            <label for="sagirlik">Sağırlık</label><br>
+
+            <input type="checkbox" id="korluk" name="hastaliklar" value="Körlük">
+            <label for="korluk">Körlük</label><br>
+
+            <input type="checkbox" id="iltihap" name="hastaliklar" value="İltihap">
+            <label for="iltihap">İltihap</label><br> <br><br>
+            <!-- checkbox section -->
+
+            <!--açıklama-->
+            <label for="aciklama">Açıklama: </label> <br>
+            <textarea id="aciklama" name="aciklama" rows="4" cols="30">Buraya açıklama yaz</textarea><br><br>
+            <!--açıklama-->
+
+            <!--Formu sıfırla-->
+            <!--hangi input type bu işi yapar ?-->
+
+            <!--Formu gönder-->
+            <input type="submit" value="Formu Gönder">
+            <!--Form bitiş-->
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+    </body>
+
+</html>

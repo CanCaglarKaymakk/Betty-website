@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Betty Web</title>
+        <link rel="stylesheet" href="image-map.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">&#128062;Betty'nin Web Sitesi&#128062;</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="form.html">Kayıp İhbar</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="photo.html">Fotoğraf</a></li>
+                    <li><a href="image-map.html">Süpriz</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h3>Resimdeki tıklanabilir gizli yerleri bul !</h3>
+
+        <img src="c-img-map.png" alt="Dogs" usemap="#dogmap">
+
+        <map name="dogmap">
+            <area shape="poly" coords="230,250,  300,250,  420,215,  485,160,  410,355,  320,365" href="https://www.hillspet.com.tr/" target="_blank">
+            <area shape="poly" coords="558,649,  638,649,   638,569,  558,569,    598,509" href="https://www.hillspet.com.tr/" target="_blank">
+            <area shape="circle" coords="650,415,  20" href="https://www.royalcanin.com/tr" target="_blank">
+            <area shape="rect" coords="1055,410,   1100,435" href="https://www.farmina.com/tr" target="_blank">
+        </map> <br> <br> <br>
+    </body>
+</html>
+

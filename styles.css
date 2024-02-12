@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #535353;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #fff;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box; /* İçeriği ve kenar boşluğunu düzgün sarmak için */
+}
+
+iframe {
+    width: 50%;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p,tr,ul,ol,li{
+    color: #fff;
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Ek olarak, ekran küçüldükçe sütun sayısını artırmak için media query ekleyebiliriz */
+@media (max-width: 768px) {
+    .video {
+        width: 100%;
+    }
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img {
+    border: 10px solid #b930a7;
+  }
